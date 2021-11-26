@@ -1,0 +1,16 @@
+{
+    "name": "web-proxy",
+    "version": "1.0.0",
+    "description": "",
+    "main": "background.js",
+    "scripts": {
+        "build": "tsc",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "vannc",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/chrome": "^0.0.154",
+        "typescript": "^4.4.2"
+    }
+}

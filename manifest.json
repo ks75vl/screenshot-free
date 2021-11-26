@@ -1,0 +1,30 @@
+{
+    "name": "Screenshot Free",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "A free tab screenshot extension",
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "web_accessible_resources": [
+        "screenshot-free-loader.js"
+    ],
+    "permissions": [
+        "<all_urls>",
+        "tabs"
+    ]
+}
